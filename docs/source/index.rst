@@ -13,7 +13,7 @@ Welcome to doctest's documentation!
 .. automodule:: package1.module1
 
 .. autoclass:: class1
-   :members: method11
+   :members: 
 
 Indices and tables
 ==================
