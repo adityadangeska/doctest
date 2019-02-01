@@ -15,6 +15,13 @@ Welcome to doctest's documentation!
 .. autoclass:: class1
    :members: 
 
+.. automodule:: package2.module2
+
+.. autoclass:: class2
+   :members: 
+
+
+
 Indices and tables
 ==================
 
