@@ -10,7 +10,7 @@ Welcome to doctest's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: package1.module1
+.. automodule:: Package1.module1
 
 .. autoclass:: class1
    :members: 
