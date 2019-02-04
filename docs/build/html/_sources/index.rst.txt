@@ -10,10 +10,21 @@ Welcome to doctest's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: package1.module1
+.. automodule:: Package1.package1
 
 .. autoclass:: class1
-   :members: method11
+   :members: 
+
+.. automodule:: package2.package2
+
+.. autoclass:: class2
+   :members: 
+
+.. automodule:: SKABaseDevice.SKABaseDevice
+
+.. autoclass:: SKABaseDevice
+   :members:
+
 
 Indices and tables
 ==================
