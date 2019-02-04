@@ -15,7 +15,17 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../src'))
+from mock import Mock as MagicMock
 
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+# Mock tango modules
+MOCK_MODULES = ['PyTango', 'tango', 'tango.server', 'run', 'DeviceMeta', 'command',
+                'future', 'future.utils', 'logging', 'logging.handlers']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 # -- Project information -----------------------------------------------------
 
