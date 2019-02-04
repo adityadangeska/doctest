@@ -34,7 +34,7 @@ from builtins import range
 file_path = os.path.dirname(os.path.abspath(__file__))
 auxiliary_path = os.path.abspath(os.path.join(file_path, os.pardir)) + "/auxiliary"
 sys.path.insert(0, auxiliary_path)
-from skabase import release
+from src import release
 from utils import (get_dp_command, exception_manager,
                            tango_type_conversion, coerce_value,
                            get_groups_from_json, get_tango_device_type_id)
@@ -55,7 +55,7 @@ class SKABaseDevice(with_metaclass(DeviceMeta, Device)):
     A generic base device for SKA.
     """
     # PROTECTED REGION ID(SKABaseDevice.class_variable) ENABLED START #
-
+    global logger
     logger = logging.getLogger(__name__)
     syslogs = SysLogHandler(address='/dev/log', facility='syslog')
     formatter = logging.Formatter('%(name)s: %(levelname)s %(module)s %(message)r')
